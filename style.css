@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 239, 246);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    margin: 50px 20px;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.box {
+    min-height: 200px;
+    padding: 2em;
+
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #fff;
+    border-radius: 5px 5px 0px 0px;
+    /* padding: 2em; */
+    flex-wrap: wrap;
+}
+
+.box-1 h2 {
+    color: rgb(85, 174, 177);
+}
+
+.box-1 h3 {
+    color: rgb(204, 224, 104);
+}
+
+.box-1 p {
+    color: rgb(172, 177, 183);
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.box-2 {
+    /* padding: 2em; */
+    /* padding-bottom: 0px; */
+    background-color: rgb(43, 179, 177);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    color: #fff;
+}
+
+.box-2 h2  {
+    color: #fff;
+}
+
+.box-2 .price{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    color: rgb(120, 218, 224);
+
+
+}
+
+.box-2  span {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.box-2 .btn {
+    background-color: rgb(191, 223, 50);
+    padding: 5%;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.box-3{
+    padding:  2em;
+    display: flex;
+    background-color: rgb(74, 190, 189);
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.8em;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.box-3 h2 {
+    color: #fff;
+}
+
+.box-3 p {
+    max-width: 70%;
+    color: rgb(157, 225, 228);
+    font-weight: 400;
+}
+
+@media (min-width:600px) {
+    .container {
+        margin: 100px auto;
+        max-width: 600px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        border-radius: 5px;
+
+    }
+
+    .box-1 {
+
+        grid-column: span 2;
+        gap: 1em;
+    }
+
+    .box-2 {
+        border-radius: 0px 0px 0px 5px;
+    }
+
+    .box-2 .btn{
+        margin-top: 1em;
+    }
+
+
+
+    .box-3 {
+        border-radius: 0px 0px 5px 0px;
+    }
+
+    .box-3 div p{
+        max-width: 90%;
+    }
+
+
+
+}
